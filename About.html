@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Car Dealership</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar-brand { font-weight: bold; }
+        .team-card { border: none; transition: transform 0.2s; }
+        .team-card:hover { transform: translateY(-5px); }
+        .avatar-img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Dealership Platform</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">About Our Company</h1>
+            <p class="lead text-muted">Welcome to the best platform to find and review car dealerships across the nation.</p>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h3>Our Mission</h3>
+                <p>We aim to bring transparency and trust to the car-buying experience. Our platform connects customers with genuine dealerships, offering a seamless interface to view ratings, read comprehensive reviews, and share real-world feedback powered by cutting-edge sentiment analysis tools.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=500&auto=format&fit=crop" alt="Office" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4 fw-semibold">Meet Our Expert Team</h2>
+        <div class="row g-4 text-center justify-content-center">
+            
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm team-card">
+                    <div class="mb-3">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop" alt="Alex Morgan" class="avatar-img shadow-sm">
+                    </div>
+                    <h5 class="fw-bold">Alex Morgan</h5>
+                    <p class="text-primary small mb-2">Project Manager & Expert Data Scientist</p>
+                    <p class="text-muted small">Specializes in system architecture and large-scale data solutions.</p>
+                    <a href="mailto:alex.morgan@dealership.com" class="btn btn-outline-dark btn-sm mt-2">Email Alex</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm team-card">
+                    <div class="mb-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop" alt="Jordan Lee" class="avatar-img shadow-sm">
+                    </div>
+                    <h5 class="fw-bold">Jordan Lee</h5>
+                    <p class="text-primary small mb-2">Lead Machine Learning Engineer</p>
+                    <p class="text-muted small">Focused on natural language processing and backend API development.</p>
+                    <a href="mailto:jordan.lee@dealership.com" class="btn btn-outline-dark btn-sm mt-2">Email Jordan</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Dealership Platform. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
