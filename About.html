@@ -1,82 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Car Dealership</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body { background-color: #f8f9fa; }
-        .navbar-brand { font-weight: bold; }
-        .team-card { border: none; transition: transform 0.2s; }
-        .team-card:hover { transform: translateY(-5px); }
-        .avatar-img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
-    </style>
+    <title>About Us</title>
+
+    <!-- Required CSS links -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">Dealership Platform</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+        <a href="About.html" class="active">About Us</a>
+        <a href="Contact.html">Contact Us</a>
     </nav>
 
-    <div class="container my-5">
-        <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold">About Our Company</h1>
-            <p class="lead text-muted">Welcome to the best platform to find and review car dealerships across the nation.</p>
+    <h1>About Us</h1>
+
+    <p>
+        Welcome to our Django React dealership application. This project helps users
+        view car dealers, filter dealers by state, check dealer details, read reviews,
+        register, log in, and submit dealer reviews.
+    </p>
+
+    <div class="team">
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Johnson">
+            <h3>Michael Johnson</h3>
+            <p><strong>Role:</strong> Backend Developer</p>
+            <p><strong>Details:</strong> Develops Django APIs, authentication logic, dealer data services, and database features.</p>
+            <p><strong>Email:</strong> michael.johnson@example.com</p>
         </div>
 
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <h3>Our Mission</h3>
-                <p>We aim to bring transparency and trust to the car-buying experience. Our platform connects customers with genuine dealerships, offering a seamless interface to view ratings, read comprehensive reviews, and share real-world feedback powered by cutting-edge sentiment analysis tools.</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=500&auto=format&fit=crop" alt="Office" class="img-fluid rounded shadow">
-            </div>
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams">
+            <h3>Sarah Williams</h3>
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Details:</strong> Builds React components, page layouts, navigation menus, and responsive user interfaces.</p>
+            <p><strong>Email:</strong> sarah.williams@example.com</p>
         </div>
 
-        <h2 class="text-center mb-4 fw-semibold">Meet Our Expert Team</h2>
-        <div class="row g-4 text-center justify-content-center">
-            
-            <div class="col-md-4">
-                <div class="card p-4 shadow-sm team-card">
-                    <div class="mb-3">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop" alt="Alex Morgan" class="avatar-img shadow-sm">
-                    </div>
-                    <h5 class="fw-bold">Alex Morgan</h5>
-                    <p class="text-primary small mb-2">Project Manager & Expert Data Scientist</p>
-                    <p class="text-muted small">Specializes in system architecture and large-scale data solutions.</p>
-                    <a href="mailto:alex.morgan@dealership.com" class="btn btn-outline-dark btn-sm mt-2">Email Alex</a>
-                </div>
-            </div>
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Brown">
+            <h3>David Brown</h3>
+            <p><strong>Role:</strong> Project Manager</p>
+            <p><strong>Details:</strong> Manages project planning, testing, documentation, deployment, and team coordination.</p>
+            <p><strong>Email:</strong> david.brown@example.com</p>
+        </div>
 
-            <div class="col-md-4">
-                <div class="card p-4 shadow-sm team-card">
-                    <div class="mb-3">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop" alt="Jordan Lee" class="avatar-img shadow-sm">
-                    </div>
-                    <h5 class="fw-bold">Jordan Lee</h5>
-                    <p class="text-primary small mb-2">Lead Machine Learning Engineer</p>
-                    <p class="text-muted small">Focused on natural language processing and backend API development.</p>
-                    <a href="mailto:jordan.lee@dealership.com" class="btn btn-outline-dark btn-sm mt-2">Email Jordan</a>
-                </div>
-            </div>
-
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Davis">
+            <h3>Emily Davis</h3>
+            <p><strong>Role:</strong> QA Tester</p>
+            <p><strong>Details:</strong> Tests login, registration, dealer filtering, review submission, and page navigation features.</p>
+            <p><strong>Email:</strong> emily.davis@example.com</p>
         </div>
     </div>
-
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p class="mb-0">&copy; 2026 Dealership Platform. All Rights Reserved.</p>
-    </footer>
-
 </body>
 </html>
